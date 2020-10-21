@@ -17,7 +17,7 @@ class CreateAlertsTable extends Migration
             $table->softDeletes();
             $table->id();
             $table->foreignId('user_id')->nullable();
-            $table->string('type_sang');
+            $table->string('groupe_sanguin');
             $table->string('ville');
             $table->string('position');
             $table->text('message')->nullable();
