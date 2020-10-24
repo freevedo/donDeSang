@@ -1,4 +1,4 @@
-<x-guest-layout>
+{{-- <x-guest-layout>
     <x-jet-authentication-card>
         <x-slot name="logo">
             <x-jet-authentication-card-logo />
@@ -45,4 +45,60 @@
             </div>
         </form>
     </x-jet-authentication-card>
-</x-guest-layout>
+</x-guest-layout> --}}
+
+@extends('layouts.app2')
+
+@section('content')
+<section id="cover" class="min-vh-100">
+<div id="cover-caption" >
+<div class="container">
+    <div class="row text-white">
+        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+            <div class="px-2">
+<form method="POST" action="{{ route('login') }}">
+    @csrf
+    <div class="">
+      <label for="tel" value="{{ __('Tel')}}">
+      <input type="text" name="tel" id="tel"  placeholder=" " :value="old('tel')" required autofocus >
+      <p>Enter your phone</p>
+    </label>
+    </div>
+    <div>
+        <p>
+
+        </p>
+    </div>
+    <div class="">
+      <label for="password" value="{{ __('Password') }}">
+      <input type="password" id="password" name="password" placeholder=" " required autocomplete="current-password">
+      <p>Enter your password</p>
+    </label>
+    </div>
+    <div class="">
+        <label for="remember_me" class="flex items-center">
+            <input id="remember_me" type="checkbox" class="form-checkbox" name="remember">
+            <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+        </label>
+    </div>
+    <div class="">
+        @if (Route::has('password.request'))
+            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                {{ __('Forgot your password?') }}
+            </a>
+        @endif
+
+        {{-- <x-jet-button class="ml-4">
+            {{ __('Login') }}
+        </x-jet-button> --}}
+    </div>
+    <button type="submit" class="btn btn-primary">{{ __('Login') }}</button>
+
+  </form>
+            </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+@endsection
