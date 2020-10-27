@@ -2,14 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\test;
-use App\Models\Alert;
-use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 
-class AlertController extends Controller
+class mailtest2 extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +14,15 @@ class AlertController extends Controller
      */
     public function index()
     {
-        //
+        $to_name = 'dada';
+        $to_email = 'celsedarius@yahoo.fr';
+        
+        $data = array('name'=>'”Ogbonna Vitalis(sender_name)”', 'body' => 'A test mail');
+        Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email) {
+        $message->to($to_email, $to_name)
+            ->subject('Laravel Test Mail’');
+        $message->from('celsedarius@gmail.com','dada');
+        });
     }
 
     /**
@@ -28,7 +32,7 @@ class AlertController extends Controller
      */
     public function create()
     {
-        return view('alerts.add');
+        //
     }
 
     /**
@@ -39,27 +43,9 @@ class AlertController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $alert= new Alert;
-
-        $alert->user_id=Auth::user()->id;
-        $alert->tel=$request->tel;
-        $alert->groupe_sanguin=$request->sang;
-        $alert->ville= $request->ville;
-        $alert->position= $request->position;
-        $alert->message=$request->message;
-        $alert->date_alert=Date('Y-m-d');
-
-        $alert->save();
-
-        $users= User::all();
-
-        foreach($users as $user){
-            Mail::to($user->email)->send(new test($user,$alert));
-        }
-        return redirect('/alert/create')->with('success','l\'alerte a ete enregistrer, meilleur sante a votre patient');
-
+        //
     }
+
     /**
      * Display the specified resource.
      *
