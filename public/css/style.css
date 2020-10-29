@@ -29,7 +29,7 @@ body {
   /*--------------------------------------------------------------
   # Back to top button
   --------------------------------------------------------------*/
-  .back-to-top {
+  /* .back-to-top {
     position: fixed;
     display: none;
     right: 15px;
@@ -54,7 +54,7 @@ body {
     background: #3ac162;
     color: #fff;
   }
-  
+   */
   /*--------------------------------------------------------------
   # Preloader
   --------------------------------------------------------------*/
@@ -831,6 +831,8 @@ body {
   margin-top: 15px;
   font-weight: bold;font-size: 22px;
 }
+
+
 /* -------LOGIN----------- */
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
@@ -1063,4 +1065,31 @@ form:before {
 
 
 
-  
+/* ======================================FOOTER========================================= */
+
+  /*footer*/
+footer
+{
+	background: #333;
+	padding: 20px 0 40px;
+}
+
+.fas.fa-chevron-up
+{
+	color:   #d1b193;
+	font-weight: bold;
+	font-size: 30px;
+	margin:20px;
+	height: 35px;
+}
+.fas.fa-chevron-up:hover
+{
+	
+	font-size: 33px;
+}
+
+footer h5
+{
+	/*text-align: center;*/
+	color:  #d1b193;
+}
