@@ -13,6 +13,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+         <!-- Font awesone -->
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
                 <!-- Vendor CSS Files -->
         <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
@@ -31,11 +33,13 @@
     <body class="font-sans antialiased">
         @include('inc.navbar')
         @yield('content')
-
+        @include('inc.footer')
          <!-- Vendor JS Files -->
-  <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+  {{-- <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script> --}}
+  {{-- <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script> --}}
+  {{-- <script src="{{ asset('vendor/jquery.easing/jquery.easing.min.js') }}"></script> --}}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
