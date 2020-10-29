@@ -94,14 +94,17 @@
                     <div class="form-group col-lg-6">
                         <label for="nom" value="{{ __('Nom') }}" >Nom<span class="blue"> *</span></label>
                         <input id="nom" class="form-control" type="text" name="nom" :value="old('nom')" required autofocus autocomplete="name" />
+                        
                     </div>
                     <div class="form-group col-lg-6">
                         <label for="prenom" value="{{ __('Prenoms') }}" >Prenom<span class="blue"> *</span></label>
                         <input id="prenom" class="form-control " type="text" name="prenom" :value="old('prenom')" required autofocus autocomplete="surname" />
+                        
                     </div>
                     <div class="form-group col-lg-6">
                         <label for="tel" value="{{ __('Tel') }}" >Numero de telephone<span class="blue"> *</span></label>
                         <input id="tel" class="form-control" type="tel" name="tel" :value="old('tel')" required autofocus autocomplete="tel" />
+                        
                     </div>
                     <div class="form-group col-lg-6">
                         <label for="groupe_sanguin" value="{{ __('Groupe Sanguin') }}" > Groupe sanguin<span class="blue"> *</span></label>
@@ -115,6 +118,7 @@
                             <option value="AB+">AB+</option>
                             <option value="A-">AB-</option>
                         </select>
+                        
                     </div>
                     <div class="form-group col-lg-6">
                       <label  for="ville" value="{{ __('Ville') }}">Ville<span class="blue"> *</span></label>
@@ -122,20 +126,24 @@
                         <option value="Ouagadougou">Ouagadougou</option>
                         <option value="Bobo-Dioulasso">Bobo-Dioulasso</option>
                       </select>
+                      
                     </div>
                     <div class="form-group col-lg-6">
                         <label for="email" value="{{ __('Email') }}" >Email</label>
                         <input id="email" class="form-control" type="email" name="email" :value="old('email')" required />
+                        
                     </div>
         
                     <div class="form-group col-lg-6">
                         <label for="password" value="{{ __('Password') }}" >Mot de passe <span class="blue"> *</span></label>
                         <input id="password" class="form-control" type="password" name="password" required autocomplete="new-password" />
+                        
                     </div>
         
                     <div class="form-group col-lg-6">
                         <label for="password_confirmation" value="{{ __('Confirm Password') }}" >Confirmer le mot de passe<span class="blue"> *</span></label>
                         <input id="password_confirmation" class="form-control" type="password" name="password_confirmation" required autocomplete="new-password" />
+                        
                     </div>
                     <div class="col-md-12">
                         <p class="blue"><strong> *Ces informations sont recquises</strong>  </p>
@@ -146,6 +154,7 @@
                         </a>
                   </div>
                     <button class="button2" style="vertical-align: middle"  type="submit" ><span>S'enregistrer</span></button>
+                    <p class="thankyou" style="display: none" >Merci de votre aimable volonte a aider les autres</p>
                   </form>
         </div>
 </section>
