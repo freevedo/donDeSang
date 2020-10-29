@@ -13,6 +13,12 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+                <!-- Vendor CSS Files -->
+        <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+        <link href="{{ asset('vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
         @livewireStyles
 
@@ -25,5 +31,16 @@
     <body class="font-sans antialiased">
         @include('inc.navbar')
         @yield('content')
+
+         <!-- Vendor JS Files -->
+  <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     </body>
+
+    
 </html>
