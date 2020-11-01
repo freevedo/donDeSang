@@ -8,11 +8,11 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="{{ url('/') }}">Home</a></li>
-          <li><a href="">About</a></li>
+          <li class="active"><a href="{{ url('/') }}">Accueil</a></li>
+          <li><a href="{{ url('/#about') }}">A propos</a></li>
+          <li><a href="{{ url('/#departments') }}">Conseils Sante</a></li>
           <li><a href="  {{ url('/alert/create')  }}">Envoyer une alerte</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="{{ route('register') }}">Register</a></li>
+          <li><a href="{{ route('register') }}">S'enregister</a></li>
           <li><a href="">Contact</a></li>
 
         </ul>

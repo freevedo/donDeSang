@@ -5,9 +5,9 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex justify-content-center align-items-center" style="background: url('{{ asset('img/hero.jpg')}}') top center;">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Learning Today,<br>Leading Tomorrow</h1>
-      <h2>We are team of talanted designers making websites with Bootstrap</h2>
-      <a href="{{ route('login') }}" class="btn-get-started">Get Started</a>
+      <h1>Une seconde,<br>Un sms, Une vie sauvee</h1>
+      <h2>Envoyez un message d'alerte pour demander du sang. Celui-ci sera transmis a des volontaires et sauvez ainsi des vies</h2>
+      <a href="{{ route('login') }}" class="btn-get-started">C'est parti</a>
     </div>
   </section><!-- End Hero -->
 
@@ -18,8 +18,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>About</h2>
-          <p>About Us</p>
+          <h2>A propos</h2>
+          <p>Decouvrir </p>
         </div>
 
         <div class="row">
@@ -100,7 +100,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section2-title">
-          <h2>Departments</h2>
+          <h2>Conseils Sante</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
