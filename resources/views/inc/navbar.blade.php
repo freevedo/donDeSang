@@ -12,7 +12,8 @@
           <li class="active"><a href="/">Accueil</a></li>
           <li><a href="{{ url('/#about') }}">A propos</a></li>
           <li><a href="{{ url('/#departments') }}">Conseils Sante</a></li>
-          <li><a href="/alert/create'">Envoyer une alerte</a></li>
+          <li><a href="/alert">alertes en cours</a></li>
+          <li><a href="/alert/create">Envoyer une alerte</a></li>
           <li><a href="{{ route('register') }}">S'enregister</a></li>
           <li><a href="">Contact</a></li>
 

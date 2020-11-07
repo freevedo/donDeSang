@@ -19,7 +19,8 @@ class AlertController extends Controller
      */
     public function index()
     {
-        //
+        $alerts= Alert::all();
+        return View('pages.list_alert')->with(['alerts'=>$alerts]);
     }
 
     /**
