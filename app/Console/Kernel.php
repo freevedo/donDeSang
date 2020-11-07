@@ -2,8 +2,10 @@
 
 namespace App\Console;
 
+use App\Models\Alert;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\DB;
 
 class Kernel extends ConsoleKernel
 {
@@ -24,6 +26,11 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->call(function () {
+            $from = date('1900-01-01');
+            $to = date('Y-m-d', strtotime('-7 days'));
+            Alert::whereBetween('date_alert', [$from, $to])->delete();
+        })->everyMinute();
         // $schedule->command('inspire')->hourly();
     }
 
