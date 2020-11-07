@@ -19,7 +19,7 @@ class AlertController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.create_alert');
     }
 
     /**
@@ -29,7 +29,7 @@ class AlertController extends Controller
      */
     public function create()
     {
-        return view('alerts.add');
+        return view('pages.create_alert');
     }
 
     /**
