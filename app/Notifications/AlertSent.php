@@ -35,7 +35,7 @@ class AlertSent extends Notification implements ShouldQueue
      */
     public function via($notifiable)
     {
-        return ['mail','database'];
+        return ['database'];
     }
 
     /**
@@ -60,7 +60,7 @@ class AlertSent extends Notification implements ShouldQueue
     {
         return [
             'date_alert'=>Carbon::now(),
-            'groupe_sanguin'=>$this->alert->groue_sanguin,
+            'groupe_sanguin'=>$this->alert->groupe_sanguin,
             'tel'=>$this->alert->tel
         ];
     }

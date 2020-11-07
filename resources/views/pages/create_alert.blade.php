@@ -18,7 +18,7 @@
 
                 <div class="form-group col-lg-6">
                     <label for="groupe_sanguin" value="{{ __('Groupe Sanguin') }}" > Groupe sanguin<span class="blue"> *</span></label>
-                    <select id="groupe_sanguin" class="form-control"  name="groupe_sanguin" :value="old('groupe_sanguin')" required autofocus autocomplete="blood" >
+                    <select id="groupe_sanguin" class="form-control"  name="groupe_sanguin" :value="old('groupe_sanguin')" required autofocus autocomplete="groupe_sanguin" >
                         <option value="O-">O-</option>
                         <option value="O+">O+</option>
                         <option value="A-">A-</option>

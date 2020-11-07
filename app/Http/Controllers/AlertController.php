@@ -46,7 +46,7 @@ class AlertController extends Controller
 
         $alert->user_id=Auth::user()->id;
         $alert->tel=$request->tel;
-        $alert->groupe_sanguin=$request->sang;
+        $alert->groupe_sanguin=$request->groupe_sanguin;
         $alert->ville= $request->ville;
         $alert->position= $request->position;
         $alert->message=$request->message;
@@ -58,9 +58,11 @@ class AlertController extends Controller
 
 
         foreach($users as $user){
+            if($user->compatible($alert)){
+                $user->notify(new AlertSent($user,$alert));
+                //Mail::to($user->email)->send(new test($user,$alert));
+            }
 
-            $user->notify(new AlertSent($user,$alert));
-            //Mail::to($user->email)->send(new test($user,$alert));
         }
         return redirect('/alert/create')->with('success','l\'alerte a ete enregistrer, meilleur sante a votre patient');
 
