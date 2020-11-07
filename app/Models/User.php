@@ -62,4 +62,38 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+
+    public function compatible(Alert $alert)
+    {
+        if($this->groupe_sanguin==$alert->groupe_sanguin || $this->groupe_sanguin=='O-' || $alert->groupe_sanguin=='AB+')
+            return true;
+        
+        else{
+               switch($alert->groupe_sanguin)
+               {
+                case 'A+':
+                    if($this->groupe_sanguin=='A-' || $this->groupe_sanguin=='O+')
+                        return true;
+                    else
+                        return false;
+                    break;
+                case 'B+':
+                    if($this->groupe_sanguin=='B-'|| $this->groupe_sanguin=='O+')
+                        return true;
+                    else
+                        return false;
+                break;
+                case 'AB-':
+                    if($this->groupe_sanguin=='A-'|| $this->groupe_sanguin=='B-')
+                        return true;
+                    else
+                        return false;
+               } 
+            
+            return false;
+        }
+        
+        
+    }
 }
