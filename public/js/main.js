@@ -98,44 +98,20 @@
     }
   
     // Back to top button
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('.back-to-top').fadeIn('slow');
-      } else {
-        $('.back-to-top').fadeOut('slow');
-      }
-    });
+    $(function () {
+      // body...
+      $(".nav-menu a, footer a").on("click",function (event) {
+          // body...
+          event.preventDefault();
+          var hash =this.hash;
   
-    $('.back-to-top').click(function() {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 1500, 'easeInOutExpo');
-      return false;
-    });
+          $('body,html').animate({scrollTop:$(hash).offset().top}, 900, function () { window.location.hash=hash;
+              // body...
+          })
+      });
+  })
   
-    // jQuery counterUp
-    $('[data-toggle="counter-up"]').counterUp({
-      delay: 10,
-      time: 1000
-    });
-  
-    // Testimonials carousel (uses the Owl Carousel library)
-    $(".testimonials-carousel").owlCarousel({
-      autoplay: true,
-      dots: true,
-      loop: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        768: {
-          items: 1
-        },
-        900: {
-          items: 2
-        }
-      }
-    });
+   
   
     // Init AOS
     $(window).on('load', function() {

@@ -50,18 +50,17 @@
 @extends('layouts.app2')
 
 @section('content')
-<section id="cover" class="min-vh-100">
+<section id="cover" class="min-vh-100 login">
 <div id="cover-caption" >
 <div class="container">
-    <div class="row text-white">
+    <div id="login" class="row text-white">
         <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
             <div class="px-2">
 <form method="POST" action="{{ route('login') }}">
     @csrf
     <div class="">
       <label for="tel" value="{{ __('Tel')}}">
-      <input type="text" name="tel" id="tel"  placeholder=" " :value="old('tel')" required autofocus >
-      <p>Enter your phone</p>
+      <input type="text" name="tel" id="tel"  placeholder="Veuillez entrer votre telephone " :value="old('tel')" required autofocus >
     </label>
     </div>
     <div>
@@ -71,8 +70,7 @@
     </div>
     <div class="">
       <label for="password" value="{{ __('Password') }}">
-      <input type="password" id="password" name="password" placeholder=" " required autocomplete="current-password">
-      <p>Enter your password</p>
+      <input type="password" id="password" name="password" placeholder=" Veuillez saisir le mot de passe " required autocomplete="current-password" >
     </label>
     </div>
     <div class="">
@@ -88,11 +86,8 @@
             </a>
         @endif
 
-        {{-- <x-jet-button class="ml-4">
-            {{ __('Login') }}
-        </x-jet-button> --}}
     </div>
-    <button type="submit" class="btn btn-primary">{{ __('Login') }}</button>
+    <button class="button" style="vertical-align: middle" type="submit" ><span>{{ __('Login') }}</span></button>
 
   </form>
             </div>

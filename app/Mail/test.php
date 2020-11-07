@@ -8,9 +8,12 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class test extends Mailable
+class test extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
+
+    public $user;
+    public $alert;
 
     /**
      * Create a new message instance.
@@ -19,7 +22,7 @@ class test extends Mailable
      */
     public function __construct($user,$alert)
     {
-        $this->user= new User;
+       
         $this->user=$user;
         $this->alert=$alert;
     }

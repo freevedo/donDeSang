@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\test;
 use App\Models\Alert;
 use App\Models\User;
+use App\Notifications\AlertSent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
@@ -54,8 +55,11 @@ class AlertController extends Controller
 
         $users= User::all();
 
+
         foreach($users as $user){
-            Mail::to($user->email)->send(new test($user,$alert));
+
+            $user->notify(new AlertSent($user,$alert));
+            //Mail::to($user->email)->send(new test($user,$alert));
         }
         return redirect('/alert/create')->with('success','l\'alerte a ete enregistrer, meilleur sante a votre patient');
 
