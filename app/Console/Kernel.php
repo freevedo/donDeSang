@@ -30,7 +30,7 @@ class Kernel extends ConsoleKernel
             $from = date('1900-01-01');
             $to = date('Y-m-d', strtotime('-7 days'));
             Alert::whereBetween('date_alert', [$from, $to])->delete();
-        })->everyMinute();
+        })->daily();
         // $schedule->command('inspire')->hourly();
     }
 
