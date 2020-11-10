@@ -6,9 +6,12 @@ use App\Mail\test;
 use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\BroadcastMessage;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Mail;
+use NotificationChannels\ExpoPushNotifications\ExpoChannel;
+use NotificationChannels\ExpoPushNotifications\ExpoMessage;
 
 class AlertSent extends Notification implements ShouldQueue
 {
@@ -35,7 +38,7 @@ class AlertSent extends Notification implements ShouldQueue
      */
     public function via($notifiable)
     {
-        return ['database'];
+        return ['database',ExpoChannel::class,'broadcast'];
     }
 
     /**
@@ -76,5 +79,25 @@ class AlertSent extends Notification implements ShouldQueue
         return [
             //
         ];
+    }
+
+
+    public function toExpoPush($notifiable)
+    {        
+        return ExpoMessage::create()
+        ->badge(1)
+        ->enableSound()
+        ->title("besoin de sang signale")
+        ->body('besoin de sang:'.$this->alert->groupe_sanguin.' à '.$this->alert->ville.' tel a contacter:'
+        .$this->alert->tel);
+    }
+
+    public function toBroadcast($notifiable)
+    {        
+        return new BroadcastMessage([
+            'date_alert'=>Carbon::now(),
+            'groupe_sanguin'=>$this->alert->groupe_sanguin,
+            'tel'=>$this->alert->tel
+        ]);
     }
 }

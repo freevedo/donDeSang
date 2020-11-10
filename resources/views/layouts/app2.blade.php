@@ -31,7 +31,8 @@
         <script src="{{ asset('js/main.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
-        @include('inc.navbar')
+    @include('layouts.partials.navbar')
+       
         @yield('content')
         @include('inc.footer')
          <!-- Vendor JS Files -->
