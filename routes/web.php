@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\PagesController@index');
-
+Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
@@ -27,3 +27,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('alert', 'App\Http\Controllers\AlertController');
     
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
