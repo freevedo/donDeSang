@@ -5,8 +5,8 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex justify-content-center align-items-center" style="background: url('{{ asset('img/hero.jpg')}}') top center;">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Une seconde,<br>Un sms, Une vie sauvee</h1>
-      <h2>Envoyez un message d'alerte pour demander du sang. Celui-ci sera transmis a des volontaires et sauvez ainsi des vies</h2>
+      <h1>Une seconde,<br>Un sms, Une vie sauvée</h1>
+      <h2>Envoyez un message d'alerte pour demander du sang. Celui-ci sera transmis à des volontaires et sauvez ainsi des vies</h2>
       <a href="{{ route('login') }}" class="btn-get-started">C'est parti</a>
     </div>
   </section><!-- End Hero -->
@@ -19,7 +19,7 @@
 
         <div class="section-title">
           <h2>A propos</h2>
-          <p>Decouvrir </p>
+          <p>Découvrir </p>
         </div>
 
         <div class="row">
@@ -27,20 +27,19 @@
             <img src="{{ asset('img/about.jpg') }}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>Avec un simple sms , sauvez des vies.</h3>
             <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+          Avec Sosbloodbf envoyez un message d'alerte de demande de sang. Celui-ci sera transmis à des volontaires qui s'hateront de venir sauver une vie. Le sang est gratuit, sauvons des vies.
             </p>
             <ul>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="icofont-check-circled"></i> Simple. Créez un compte. Renseignez vos données</li>
+              <li><i class="icofont-check-circled"></i> Envoyez une alerte lorsque le besoin se fait savoir</li>
+              <li><i class="icofont-check-circled"></i> L'alerte sera transmise à la banque de sang, aux hopitaux et aux volontaires dans votre ville, région</li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              Qu'est ce que vous attendez ? Lancez-vous.
             </p>
-            <a href="about.html" class="learn-more-btn">Learn More</a>
+            <a href="{{ url('/about') }}" class="learn-more-btn">Learn More</a>
           </div>
         </div>
 
@@ -54,13 +53,12 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch">
             <div class="content">
-              <h3>Why Choose Mentor?</h3>
+              <h3>Pourquoi devons nous agir?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                D'apres l'OMS, "Les transfusions sanguines sauvent des vies et améliorent la santé, mais bon nombre des patients qui en ont besoin n’ont pas accès en temps voulu à des produits sécurisés. Des transfusions sanguines peuvent être nécessaires à tout moment, à la ville comme à la campagne. Le manque de sang est à l'origine du décès de nombreux patients." <i>Source OMS Juin 2017</i>
               </p>
               <div class="text-center">
-                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="https://www.who.int/features/factfiles/blood_transfusion/fr/" target="_blank" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -69,23 +67,23 @@
               <div class="row">
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-receipt"></i>
-                    <h4>Corporis voluptates sit</h4>
-                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    <i class="bx bx-health"></i>
+                    <h4>Les transfusions sanguines sauvent des vies</h4>
+                    <p>Elles sont géneralement utilisées lors d'opérations chirurgicales, pour les femmes à laccouchement , les nouveaux nés.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-cube-alt"></i>
-                    <h4>Ullamco laboris ladore pan</h4>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <i class='bx bxs-donate-heart' ></i>
+                    <h4>Il faut des dons réguliers et non-renumérés pour assurer la demande</h4>
+                    <p>La demande est grande et pour la satisfaire il faut des donneurs réguliers pour alimenter les différentes banques de sang. L'invitation va a lencontre de tout adulte pouvant donner son sang à le faire et ce de facon régulière.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
-                    <i class="bx bx-images"></i>
-                    <h4>Labore consequatur</h4>
-                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    <i class='bx bxs-donate-blood' ></i>
+                    <h4>Une seule unité de sang peut servir à plusieurs patients</h4>
+                    <p>"En fractionnant le sang en ses différents constituants, on peut traiter plusieurs patients avec une seule unité de sang et n’administrer à un patient que les constituants dont il a besoin." <strong>Source : OMS</strong></p>
                   </div>
                 </div>
               </div>
@@ -100,7 +98,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section2-title">
-          <h2>Conseils Sante</h2>
+          <h2>Conseils Santé</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
@@ -109,8 +107,10 @@
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
                 <a class="nav-link active show" data-toggle="tab" href="#tab-1">
-                  <h4>Cardiology</h4>
-                  <p>Quis excepturi porro totam sint earum quo nulla perspiciatis eius.</p>
+                  <h4>Qui peut donner son sang ?</h4>
+                  <p>Toute personne en bonne santé, âgée de 18 à 70 ans, ne faisant pas l’objet d’une mesure de protection légale (tutelle…) et reconnue apte à l’issue de l’entretien prédon peut donner son sang.
+
+                    </p>
                 </a>
               </li>
               <li class="nav-item mt-2">
@@ -136,10 +136,15 @@
           <div class="col-lg-8">
             <div class="tab-content">
               <div class="tab-pane fade show active " id="tab-1">
-                <h3>Cardiology</h3>
-                <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                <img src="{{ asset('img/departments-1.jpg ')}}" alt="" class="img-fluid">
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <h3>Compatibilité des groupes sanguins</h3>
+                <p class="font-italic">
+                  Les donneurs de groupe O négatif (O-) sont particulièrement recherchés car leurs globules rouges peuvent être transfusés à tous les patients. Mais les donneurs de tout groupe sanguin sont les bienvenus.
+                  </p>
+                <img src="{{ asset('img/departements_1.jpg ')}}" alt="" class="img-fluid">
+                <p>Les personnes du groupe A peuvent donner du sang à d’autres personnes du groupe A et à des individus de groupe AB. Elles peuvent recevoir du sang de personnes du groupe A et du groupe O.
+                  Les personnes du groupe B peuvent donner du sang à d’autres personnes du groupe B et à des individus de groupe AB. Elles peuvent recevoir du sang de personnes du groupe B et du groupe O.
+                  Les personnes du groupe AB ne peuvent donner du sang qu’à d’autres personnes du groupe AB. Elles peuvent par contre recevoir du sang de tous les groupes (A, B, AB, O).
+                  Les personnes de groupe O, enfin, peuvent donner du sang à tous les groupes (A, B, AB, O). Elles ne peuvent par contre recevoir du sang que de personnes du même groupe qu’elles, à savoir O.</p>
               </div>
               <div class="tab-pane fade" id="tab-2">
                 <h3>Neurology</h3>
@@ -166,7 +171,7 @@
       </div>
     </section><!-- End Departments Section -->
 
-
+     
   </main><!-- End #main -->
  
 @endsection
