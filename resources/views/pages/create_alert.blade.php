@@ -2,20 +2,22 @@
 
 @section('content')
 
-<!-- ======= Hero Section ======= -->
-
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
+    <!-- ======= Create_alert ======= -->
+    <section id="create" class="create">
+      <div class="container " data-aos="fade-up">
+        
+        <div class="heading">
+            <h3>Envoyer une alerte</h3>
+        </div>
+        <div class="divider">
+        </div>
        <form method="POST" action="/alert">
 
         @csrf
             <div class="row">
-
                 <div class="form-group col-lg-6">
                     <label for="groupe_sanguin" value="{{ __('Groupe Sanguin') }}" > Groupe sanguin<span class="blue"> *</span></label>
                     <select id="groupe_sanguin" class="form-control"  name="groupe_sanguin" :value="old('groupe_sanguin')" required autofocus autocomplete="groupe_sanguin" >

@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
     font-family: "Open Sans", sans-serif;
-    color: #444444;
+    color: #fff;
   }
   
   a {
@@ -26,35 +26,7 @@ body {
     font-family: "Raleway", sans-serif;
   }
   
-  /*--------------------------------------------------------------
-  # Back to top button
-  --------------------------------------------------------------*/
-  /* .back-to-top {
-    position: fixed;
-    display: none;
-    right: 15px;
-    bottom: 15px;
-    z-index: 99999;
-  }
-  
-  .back-to-top i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background: #ff4754;
-    color: #fff;
-    transition: all 0.4s;
-  }
-  
-  .back-to-top i:hover {
-    background: #3ac162;
-    color: #fff;
-  }
-   */
+
   /*--------------------------------------------------------------
   # Preloader
   --------------------------------------------------------------*/
@@ -110,7 +82,48 @@ body {
       transition-delay: 0 !important;
     }
   }
-  
+  /*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #444;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  color:#509505  ;
+}
+
+#topbar .contact-info i {
+  color:#509505  ;
+  padding: 4px;
+}
+
+#topbar .contact-info .icofont-phone {
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+#topbar .social-links a {
+  color: #509505;
+  padding: 4px 12px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color:#99B700  ;
+}
+
   /*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
@@ -120,6 +133,9 @@ body {
     z-index: 997;
     padding: 15px 0;
     box-shadow: 0px 0 18px rgba(55, 66, 59, 0.08);
+    height: 70px;
+    transition: all 0.5s;
+    transition: all 0.5s;
   }
   
   #header .logo {
@@ -146,7 +162,15 @@ body {
       font-size: 28px;
     }
   }
-  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content{
+    padding-top: 102px;
+  }
   /*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
@@ -1069,8 +1093,16 @@ form:before {
   /* background: #333; */
   background-color: #333;
 }
+/* ===============================Create Alert=================================================== */
 
+#create{
+  background-color: #fff;
+}
 
+#create .container{
+  background-color: #509505;
+  border-radius: 5px;
+}
 
 /* ======================================FOOTER========================================= */
 
@@ -1083,7 +1115,7 @@ footer
 
 .fas.fa-chevron-up
 {
-	color:   #d1b193;
+	color:  #ff4754;
 	font-weight: bold;
 	font-size: 30px;
 	margin:20px;
@@ -1092,24 +1124,25 @@ footer
 .fas.fa-chevron-up:hover
 {
 	
-	font-size: 33px;
+  font-size: 33px;
+  color: #ee2634;
 }
 
 footer h5
 {
 	/*text-align: center;*/
-	color:  #d1b193;
+	color:   #ff4754;
 }
 
 footer .footer-top {
   /* background: #5c768d; */
-  border-top: 1px solid #768fa6;
-  border-bottom: 1px solid #67839c;
+  /* border-top: 1px solid #768fa6;
+  border-bottom: 1px solid #67839c; */
   padding: 60px 0 30px 0;
 }
 
 footer .footer-top .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 footer .footer-top .footer-info h3 {
@@ -1118,6 +1151,7 @@ footer .footer-top .footer-info h3 {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
+  color: #ff4754;
 }
 
 footer .footer-top .footer-info p {
@@ -1131,7 +1165,7 @@ footer .footer-top .footer-info p {
 footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #768fa6;
+  background: #ff4754;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1144,7 +1178,7 @@ footer .footer-top .social-links a {
 }
 
 footer .footer-top .social-links a:hover {
-  background: #428bca;
+  background:#ee2634;
   color: #fff;
   text-decoration: none;
 }
@@ -1169,7 +1203,7 @@ footer .footer-top .footer-links ul {
 
 footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #9eccf4;
+  color:#ff4754;
   font-size: 18px;
   line-height: 1;
 }
@@ -1192,7 +1226,7 @@ footer .footer-top .footer-links ul a {
 }
 
 footer .footer-top .footer-links ul a:hover {
-  color: #9eccf4;
+  color:#ee2634;
 }
 
 footer .copyright {
@@ -1208,5 +1242,5 @@ footer .credits {
 }
 
 footer .credits a {
-  color: #9eccf4;
+  color: #ee2634;
 }

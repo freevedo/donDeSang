@@ -33,12 +33,6 @@
           </div>
         </div>
       </div>
-  
-      <div class="container">
-        <div class="copyright">
-          Powerded by  <strong><span><a href="">Freevedo</a> </span></strong>. All Rights Reserved
-        </div>
-        
-      </div>
-    <h5>Copyright 2019 © Tous droits reserves. By SosBloodbf</h5>
+      <div class="copyright"> <h5>Copyright 2019 © Tous droits reserves. By SosBloodbf</h5></div>
+   
 </footer>
