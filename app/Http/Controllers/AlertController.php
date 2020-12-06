@@ -42,6 +42,13 @@ class AlertController extends Controller
     public function store(Request $request)
     {
         
+        $this->validate($request, [
+            'tel' => 'required',
+            'ville' => 'required',
+            'position' => 'required',
+            'groupe_sanguin' => 'required'
+        ]);
+
         $alert= new Alert;
 
         $alert->user_id=Auth::user()->id;
@@ -64,7 +71,7 @@ class AlertController extends Controller
             }
 
         }
-        return redirect('/alert/create')->with('success','l\'alerte a ete enregistrer, meilleur sante a votre patient');
+        return redirect('/alert/create')->with('success','l\'alerte a été enregistrer, meilleure sante à votre patient');
 
     }
     /**
