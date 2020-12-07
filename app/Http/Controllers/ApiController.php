@@ -26,7 +26,14 @@ class ApiController extends Controller
             'password' => Hash::make($request['password']),
         ]);
     
-       
+        $this->validate($request, [
+            'nom' => 'required',
+            'prenom' => 'required',
+            'tel' => 'required',
+            'ville' => 'required',
+            'password' => 'required',
+            'groupe_sanguin' => 'required'
+        ]);
 
         return $user->createToken($request->device_name)->plainTextToken;
     }
