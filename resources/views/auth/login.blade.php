@@ -13,7 +13,10 @@
     @csrf
     <div class="">
       <label for="tel" value="{{ __('Tel')}}">
-      <input type="text" name="tel" id="tel"  placeholder="Veuillez entrer votre telephone " :value="old('tel')" required autofocus >
+      <input type="text" name="tel" id="tel"  placeholder="Veuillez entrer votre telephone " :value="old('tel')" class="@error('tel') is-invalid @enderror" >
+      @error('tel')
+      <div class="invalid-form">{{ $message }}</div>
+        @enderror
     </label>
     </div>
     <div>
@@ -23,12 +26,15 @@
     </div>
     <div class="">
       <label for="password" value="{{ __('Password') }}">
-      <input type="password" id="password" name="password" placeholder=" Veuillez saisir le mot de passe " required autocomplete="current-password" >
+      <input type="password" id="password" name="password" placeholder=" Veuillez saisir le mot de passe " class="@error('password') is-invalid @enderror">
+      @error('password')
+      <div class="invalid-form">{{ $message }}</div>
+        @enderror
     </label>
     </div>
     <div class="">
         <label for="remember_me" class="flex items-center">
-            <input id="remember_me" type="checkbox" class="form-checkbox" name="remember">
+            <input id="remember_me" type="checkbox" checked="checked" class="form-checkbox" name="remember">
             <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
         </label>
     </div>
@@ -50,4 +56,5 @@
 </div>
 </section>
 @endsection 
+
 
