@@ -71,8 +71,8 @@ class AlertController extends Controller
             }
 
         }
-        return redirect('/alert/create')->with('success','l\'alerte a été enregistrer, meilleure sante à votre patient');
-
+        // return redirect('/alert/create')->with('success','l\'alerte a été enregistrer, meilleure sante à votre patient');
+        return view('pages.confirm');
     }
     /**
      * Display the specified resource.
