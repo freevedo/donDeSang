@@ -14,13 +14,13 @@
         </div>
         <div class="divider">
         </div>
-       <form method="POST" action="/alert">
+       <form method="POST" action="{{ url('/alert') }}">
 
         @csrf
             <div class="row">
                 <div class="form-group col-lg-6">
                     <label for="groupe_sanguin" value="{{ __('Groupe Sanguin') }}" > Groupe sanguin<span class="blue"> *</span></label>
-                    <select id="groupe_sanguin" class="form-control"  name="groupe_sanguin" :value="old('groupe_sanguin')" required autofocus autocomplete="groupe_sanguin" >
+                    <select id="groupe_sanguin" class="form-control @error('groupe_sanguin') is-invalid @enderror"  name="groupe_sanguin" :value="old('groupe_sanguin')"  >
                         <option value="O-">O-</option>
                         <option value="O+">O+</option>
                         <option value="A-">A-</option>
@@ -29,40 +29,52 @@
                         <option value="B+">B+</option>
                         <option value="AB+">AB+</option>
                         <option value="A-">AB-</option>
-                    </select>    
+                    </select>
+                    @error('groupe_sanguin')
+                            <div class="invalid-form">{{ $message }}</div>
+                        @enderror 
                 </div>
 
                  <div class="form-group col-lg-6">
                       <label  for="ville" value="{{ __('Ville') }}">Ville<span class="blue"> *</span></label>
-                      <select  id="ville" class="form-control"  name="ville" :value="old('ville')" required autofocus autocomplete="blood">
+                      <select  id="ville" class="form-control @error('ville') is-invalid @enderror"  name="ville" :value="old('ville')" >
                         <option value="Ouagadougou">Ouagadougou</option>
                         <option value="Bobo-Dioulasso">Bobo-Dioulasso</option>
-                      </select>                      
+                      </select>
+                      @error('ville')
+                            <div class="invalid-form">{{ $message }}</div>
+                        @enderror                      
                 </div>
             
                 <div class="form-group col-lg-6">
-                    <label for="tel"  >Tel N a contacter<span class="blue"> *</span></label>
-                    <input id="tel" class="form-control" type="number" name="tel" :value="old('tel')" required autofocus autocomplete="tel" />                        
-                </div>
+                    <label for="tel"  >Numéro à contacter<span class="blue"> *</span></label>
+                    <input id="tel" class="form-control @error('tel') is-invalid @enderror" type="tel" name="tel" :value="old('tel')" placeholder="73456765"  />
+                    @error('tel')
+                            <div class="invalid-form">{{ $message }}</div>
+                        @enderror 
+                  </div>
                     
                 <div class="form-group col-lg-6">
                     <label for="position"  >Votre position <span class="blue"> *</span></label>
-                    <input id="position" class="form-control " type="text" name="position" :value="old('position')" required autofocus autocomplete="position" />    
+                    <input id="position" class="form-control @error('posiition') is-invalid @enderror" type="text" name="position" :value="old('position')"  placeholder="Hopital,centre de santé,Secteur,Quartier..."  /> 
+                    @error('position')
+                            <div class="invalid-form">{{ $message }}</div>
+                    @enderror   
                 </div>
                     
                 <div class="form-group col-lg-6">
-                    <label for="message"  >voulez vous ajouter un message<span class="blue"> *</span></label>
-                    <textarea id="message" class="form-control" type="text" name="message" :value="old('message')" maxlenght="255" rows="5" cols="33">
+                    <label for="message"  >Ajouter un message<span class="blue"> *</span></label>
+                    <textarea id="message" class="form-control" type="text" name="comment" :value="old('message')" form="usrform"  rows="5"  cols="50">
 
                     </textarea>
                  
                 </div>
                     
-            <button class="button2" style="vertical-align: middle"  type="submit" ><span>Envoyer l'alerte sang</span></button>
+            <button class="button2" style="vertical-align: middle"  type="submit" ><span>Envoyer l'alerte </span></button>
        </form>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Section Create -->
 
    
 

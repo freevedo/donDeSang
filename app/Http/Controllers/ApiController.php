@@ -32,7 +32,7 @@ class ApiController extends Controller
             'tel' => 'required',
             'ville' => 'required',
             'password' => 'required',
-            'groupe_sanguin' => 'required'
+            'groupe_sanguin' => 'required',
         ]);
 
         return $user->createToken($request->device_name)->plainTextToken;

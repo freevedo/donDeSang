@@ -3,10 +3,10 @@
 @section('content')
 
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex justify-content-center align-items-center" style="background: url('{{ asset('img/hero.jpg')}}') top center;">
+<section id="hero" class="d-flex justify-content-center align-items-center" >
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Une seconde,<br>Un sms, Une vie sauvée</h1>
-      <h2>Envoyez un message d'alerte pour demander du sang. Celui-ci sera transmis à des volontaires et sauvez ainsi des vies</h2>
+      <h2>Envoyez un message d'alerte pour demander du sang. C elui-ci sera transmis à des volontaires et sauvez ainsi des vies</h2>
       <a href="{{ route('login') }}" class="btn-get-started">C'est parti</a>
     </div>
   </section><!-- End Hero -->
@@ -99,7 +99,7 @@
 
         <div class="section2-title">
           <h2>Conseils Santé</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Dans cette rubrique vous aurez acces a des conseils santes sur des problemes frequents. Comment s'en prevenir et ameliorer son mode de vie</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -115,19 +115,19 @@
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
-                  <h4>Neurology</h4>
+                  <h4>Diabete</h4>
                   <p>Voluptas vel esse repudiandae quo excepturi.</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-toggle="tab" href="#tab-3">
-                  <h4>Hepatology</h4>
+                  <h4>Le cancer</h4>
                   <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-toggle="tab" href="#tab-4">
-                  <h4>Pediatrics</h4>
+                  <h4>Le tabagisme passif</h4>
                   <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
                 </a>
               </li>

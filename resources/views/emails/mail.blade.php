@@ -12,4 +12,4 @@ Bonjour <strong>{{ $user->nom }}  {{ $user->prenom}} </strong>,
 
 <p>merci pour votre disponiblite</p>
 
-<p>5mn pour sauver une ville</p>
+<p>5mn pour sauver une vies</p>
