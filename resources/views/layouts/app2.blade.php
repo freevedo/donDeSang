@@ -32,6 +32,7 @@
       @include('inc.topbar')
         @include('inc.navbar')
         @yield('content')
+        @include('inc.messages')
         @include('inc.footer')
          <!-- Vendor JS Files -->
          <!-- Scripts Js-Bootstrap -->

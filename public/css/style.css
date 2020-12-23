@@ -175,6 +175,11 @@ color:#99B700  ;
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .nav-menu ul {
   margin: 0;
   padding: 0;
@@ -188,13 +193,15 @@ color:#99B700  ;
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-  padding: 10px 0 10px 24px;
+  float: left;
+  /* padding: 10px 0 10px 24px; */
 }
 
 .nav-menu a {
   display: block;
   position: relative;
   color: #37423b;
+  padding: 12px 15px;
   transition: 0.3s;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
@@ -202,7 +209,7 @@ color:#99B700  ;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color:#ff4754;;
+  color :#ee2634;;
 }
 
 .nav-menu .drop-down ul {
@@ -236,11 +243,13 @@ color:#99B700  ;
   font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  color: #37423b;
+  color:#37423b;
 }
-
+.nav-menu .drop-down ul li {
+  background-color: #fff;
+}
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #5fcf80;
+  color:#ee2634;;
 }
 
 .nav-menu .drop-down > a:after {
@@ -254,11 +263,11 @@ color:#99B700  ;
   left: calc(100% - 30px);
 }
 
-.nav-menu .drop-down .drop-down:hover > ul {
+ .nav-menu .drop-down .drop-down:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
-}
+} 
 
 .nav-menu .drop-down .drop-down > a {
   padding-right: 35px;
@@ -304,8 +313,8 @@ color:#99B700  ;
 }
 
 .get-started-btn:hover {
-  background: #ee2634;;
-  color: #fff;
+  background: #ee2634;
+  color: #fff !important;
 }
 
 @media (max-width: 768px) {
@@ -366,7 +375,7 @@ color:#99B700  ;
   outline: none;
 }
 
-.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+.mobile-nav a:hover {
   color: #ff4754;
   text-decoration: none;
 }
@@ -1253,4 +1262,12 @@ color: #ee2634;
 
 .logout{
   color: #000407;
+}
+
+/* Messages  */
+.invalid-form{
+  color: rgb(223, 10, 10);
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
