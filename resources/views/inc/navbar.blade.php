@@ -15,7 +15,6 @@
           <li class="{{ Request::is('alert') ? 'active' : ''}} "><a href="{{ url('/alert') }}"></i> alertes  <i class='bx bxs-bell-ring' ></i></a></li>
             {{-- <i class="fas fa-sms"> --}}
           <li class="{{ Request::is('alert/create') ? 'active' : ''}} "><a href="{{ url('/alert/create') }}">Envoyer une alerte</a></li>
-          <li class="{{ Request::is('contact') ? 'active' : ''}} "><a href="">Contact</a></li>
         @guest
           <li><a href="{{ route('register') }}">S'enregister</a></li>
 
