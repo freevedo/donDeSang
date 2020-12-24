@@ -60,7 +60,7 @@
   // Back to top button
   $(function () {
     // body...
-    $(" footer a").on("click",function (event) {
+    $(" footer .back-to-top").on("click",function (event) {
         // body...
         event.preventDefault();
         var hash =this.hash;
