@@ -116,19 +116,19 @@
               <li class="nav-item mt-2">
                 <a class="nav-link" data-toggle="tab" href="#tab-2">
                   <h4>Diabete</h4>
-                  <p>Voluptas vel esse repudiandae quo excepturi.</p>
+                  <p></p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-toggle="tab" href="#tab-3">
                   <h4>Le cancer</h4>
-                  <p>Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+                  <p></p>
                 </a>
               </li>
               <li class="nav-item mt-2">
                 <a class="nav-link" data-toggle="tab" href="#tab-4">
                   <h4>Le tabagisme passif</h4>
-                  <p>Ratione hic sapiente nostrum doloremque illum nulla praesentium id</p>
+                  <p></p>
                 </a>
               </li>
             </ul>
@@ -147,22 +147,24 @@
                   Les personnes de groupe O, enfin, peuvent donner du sang à tous les groupes (A, B, AB, O). Elles ne peuvent par contre recevoir du sang que de personnes du même groupe qu’elles, à savoir O.</p>
               </div>
               <div class="tab-pane fade" id="tab-2">
-                <h3>Neurology</h3>
-                <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <h3>Diabete</h3>
+                <p class="font-italic">Le diabète est une maladie qui empêche le corps d'utiliser correctement l'énergie fournie par les aliments ingérés. Par ailleurs, la maladie survient lorsque le pancréas ne sécrète plus d'insuline ou lorsque le corps devient résistant à l'insuline produite</p>
                 <img src="{{ asset('img/departments-2.jpg') }}" alt="" class="img-fluid">
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <p>Lorsque nous mangeons, les aliments sont dégradés en glucose (sucre). Ce glucose fournit de l'énergie au corps afin qu'il puisse fonctionner correctement en puisant dans ses ressources. Pendant la digestion, le sang transporte le glucose dans tout le corps et vient alimenter les cellulesOs. Cependant, pour que le sucre présent dans le sang puisse ensuite être transmis aux cellules, le corps a besoin d'insuline, une hormone sécrétée par le pancréas. L'insuline agit donc comme une clé permettant au glucose de passer du sang aux cellules de notre corps.
+                  Chez les personnes diabétiques, une défaillance entre en jeu : le pancréas ne produit pas assez d'insuline pour remplir cette mission. Le glucose reste alors dans le sang et ne peut pas passer dans les cellules. Il ne peut donc pas fournir d'énergie aux muscles du corps.
+                  Si le glucose reste dans le sang, la glycémie augmente. À long terme, cela peut entraîner le dysfonctionnement et la détérioration de nombreux organes comme les yeux et les reins.</p>
               </div>
               <div class="tab-pane fade" id="tab-3">
-                <h3>Hepatology</h3>
-                <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <h3>Cancer</h3>
+                <p class="font-italic">Il existe plusieurs types de cancer qui touchent differents organes ou cellules du corps humain</p>
                 <img src="{{ asset('img/departments-3.jpg') }}" alt="" class="img-fluid">
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <p>Le cancer est une maladie provoquée par la transformation de cellules qui deviennent anormales et prolifèrent de façon excessive. Ces cellules déréglées finissent parfois par former une masse qu'on appelle tumeur maligne. Les cellules cancéreuses ont tendance à envahir les tissus voisins et à se détacher de la tumeur initiale. Elles migrent alors par les vaisseaux sanguins et les vaisseaux lymphatiques pour aller former une autre tumeur (métastase).</p>
               </div>
               <div class="tab-pane fade" id="tab-4">
-                <h3>Pediatrics</h3>
-                <p class="font-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                <h3>Tabagisme passif</h3>
+                <p class="font-italic">Le tabagisme est l'une des causes de maladies</p>
                 <img src="{{ asset('img/departments-4.jpg') }}" alt="" class="img-fluid">
-                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                <p>Le tabagisme passif concerne toute personne qui vit dans l’entourage d’un fumeur et inhale involontairement sa fumée. Cette fumée contient des toxiques: goudron, monoxyde de carbone, substances irritantes... Les risques liés à l'inhalation involontaire de cette fumée: Des problèmes respiratoires, Crise asthmatique, Cancer des poumons,... Précautions: Certes, la loi aide les non-fumeurs à se protéger du tabagisme passif, encore faut-il que les fumeurs la respectent à savoir: Ne pas fumer dans  les lieux publics! Nous pouvons alors nous éloigner des fumeurs le temps que la loi fasse son travail.</p>
               </div>
             </div>
           </div>
