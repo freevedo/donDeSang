@@ -29,7 +29,7 @@
         
     </head>
     <body class="font-sans antialiased">
-      @include('inc.topbar')
+        @include('inc.topbar')
         @include('inc.navbar')
         @yield('content')
         @include('inc.messages')
