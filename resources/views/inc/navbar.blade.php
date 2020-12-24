@@ -28,7 +28,7 @@
       <a href="{{ route('login') }}" class="get-started-btn">Login</a>
       </li>
       @else
-      <li class="drop-down"><a href="" class="get-started-btn">{{Auth::user()->prenom}}</a>
+      <li class="drop-down"><a href="" class="get-started-btn"> <i class="fas fa-user"></i> {{Auth::user()->prenom}}</a>
         <ul>
           <li >
             <form method="POST" action="{{ route('logout') }}">
