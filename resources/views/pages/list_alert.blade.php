@@ -12,7 +12,7 @@
             <h3>Liste des alertes en cours</h3>
           </div>
             <h1><strong>Liste des alertes en cours    </strong></h1>
-                <table class="table table-striped table-bordered ">
+                <table class="table table-striped table-bordered table-dark table-responsive-sm">
                     <thead>
                         <tr>
                             <th>Date de l'alerte</th>
