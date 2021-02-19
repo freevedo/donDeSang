@@ -9,9 +9,9 @@
 <!-- ta classe nav-menu doit avoir un souci et ca bloque les liens-->
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="{{ Request::is('/') ? 'active' : ''}} "><a href="{{ url('/') }}">Accueil</a></li>
-          <li class="{{ Request::is('/#about') ? 'active' : ''}} "><a href="{{ url('/#about') }}">A propos</a></li>
-          <li class="{{ Request::is('#departments') ? 'active' : ''}} "><a href="{{ url('/#departments') }}">Conseils Sante</a></li>
+          <li class="{{ Request::is('/') ? 'active' : ''}} "><a class="linkmain" href="{{ url('/') }}">Accueil</a></li>
+          <li class="{{ Request::is('/#about') ? 'active' : ''}} "><a class="linkmain" href="{{ url('/#about') }}">A propos</a></li>
+          <li class="{{ Request::is('#departments') ? 'active' : ''}} "><a class="linkmain" href="{{ url('/#departments') }}">Conseils Sante</a></li>
           <li class="{{ Request::is('alert') ? 'active' : ''}} "><a href="{{ url('/alert') }}"></i> alertes  <i class='bx bxs-bell-ring' ></i></a></li>
             {{-- <i class="fas fa-sms"> --}}
           <li class="{{ Request::is('alert/create') ? 'active' : ''}} "><a href="{{ url('/alert/create') }}">Envoyer une alerte</a></li>
