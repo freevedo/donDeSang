@@ -21,9 +21,9 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Liens utiles</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/') }}">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#about') }}">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="{{ url('/#departments') }}">Services</a></li>
+              <li><i class="bx bx-chevron-right "></i> <a class="linkmain" href="{{ url('/') }}">Home</a></li>
+              <li><i class="bx bx-chevron-right "></i> <a class="linkmain" href="{{ url('/#about') }}">About us</a></li>
+              <li><i class="bx bx-chevron-right "></i> <a class="linkmain" href="{{ url('/#departments') }}">Services</a></li>
             </ul>
           </div>
         </div>
