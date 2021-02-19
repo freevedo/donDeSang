@@ -19,7 +19,7 @@ class AlertController extends Controller
      */
     public function index()
     {
-        $alerts= Alert::all();
+        $alerts= Alert::orderBy('created_at' , 'desc')->take(5)->get();
         return View('pages.list_alert')->with(['alerts'=>$alerts]);
     }
 
