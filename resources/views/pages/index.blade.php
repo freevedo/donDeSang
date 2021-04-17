@@ -6,7 +6,7 @@
 <section id="hero" class="d-flex justify-content-center align-items-center" >
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Une seconde,<br>Un sms, Une vie sauvée</h1>
-      <h2>Envoyez un message d'alerte pour demander du sang. C elui-ci sera transmis à des volontaires et sauvez ainsi des vies</h2>
+      <h2>Envoyez un message d'alerte pour demander du sang. Celui-ci sera transmis à des volontaires et sauvez ainsi des vies</h2>
       <a href="{{ route('login') }}" class="btn-get-started">C'est parti</a>
     </div>
   </section><!-- End Hero -->
@@ -29,15 +29,19 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Avec un simple sms , sauvez des vies.</h3>
             <p class="font-italic">
-          Avec Sosbloodbf envoyez un message d'alerte de demande de sang. Celui-ci sera transmis à des volontaires qui s'hateront de venir sauver une vie. Le sang est gratuit, sauvons des vies.
+          Avec Fasoblood envoyez un message d'alerte de demande de sang. Celui-ci sera transmis à des volontaires 
+          qui s'hateront de venir sauver une vie.
+           Le sang est gratuit, sauvons des vies.
             </p>
             <ul>
               <li><i class="icofont-check-circled"></i> Simple. Créez un compte. Renseignez vos données</li>
               <li><i class="icofont-check-circled"></i> Envoyez une alerte lorsque le besoin se fait savoir</li>
-              <li><i class="icofont-check-circled"></i> L'alerte sera transmise à la banque de sang, aux hopitaux et aux volontaires dans votre ville, région</li>
+              <li><i class="icofont-check-circled"></i> L'alerte sera transmise à la banque de sang, aux hopitaux 
+                et aux volontaires dans votre ville, région</li>
             </ul>
             <p>
-              Qu'est ce que vous attendez ? Lancez-vous.
+              <strong>Qu'est ce que vous attendez ? Lancez-vous.</strong>
+              
             </p>
             <a href="{{ url('/about') }}" class="learn-more-btn">Learn More</a>
           </div>
@@ -55,7 +59,10 @@
             <div class="content">
               <h3>Pourquoi devons nous agir?</h3>
               <p>
-                D'apres l'OMS, "Les transfusions sanguines sauvent des vies et améliorent la santé, mais bon nombre des patients qui en ont besoin n’ont pas accès en temps voulu à des produits sécurisés. Des transfusions sanguines peuvent être nécessaires à tout moment, à la ville comme à la campagne. Le manque de sang est à l'origine du décès de nombreux patients." <i>Source OMS Juin 2017</i>
+                D'apres l'OMS, "Les transfusions sanguines sauvent des vies et améliorent la santé, mais bon nombre 
+                des patients qui en ont besoin n’ont pas accès en temps voulu à des produits sécurisés. 
+                Des transfusions sanguines peuvent être nécessaires à tout moment, à la ville comme à la campagne. 
+                Le manque de sang est à l'origine du décès de nombreux patients." <i>Source OMS Juin 2017</i>
               </p>
               <div class="text-center">
                 <a href="https://www.who.int/features/factfiles/blood_transfusion/fr/" target="_blank" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
@@ -69,21 +76,26 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-health"></i>
                     <h4>Les transfusions sanguines sauvent des vies</h4>
-                    <p>Elles sont géneralement utilisées lors d'opérations chirurgicales, pour les femmes à laccouchement , les nouveaux nés.</p>
+                    <p>Elles sont géneralement utilisées lors d'opérations chirurgicales,
+                       pour les femmes à laccouchement , les nouveaux nés.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class='bx bxs-donate-heart' ></i>
                     <h4>Il faut des dons réguliers et non-renumérés pour assurer la demande</h4>
-                    <p>La demande est grande et pour la satisfaire il faut des donneurs réguliers pour alimenter les différentes banques de sang. L'invitation va a lencontre de tout adulte pouvant donner son sang à le faire et ce de facon régulière.</p>
+                    <p>La demande est grande et pour la satisfaire il faut des donneurs réguliers 
+                      pour alimenter les différentes banques de sang. L'invitation va a lencontre de 
+                      tout adulte pouvant donner son sang à le faire et ce de facon régulière.</p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class='bx bxs-donate-blood' ></i>
                     <h4>Une seule unité de sang peut servir à plusieurs patients</h4>
-                    <p>"En fractionnant le sang en ses différents constituants, on peut traiter plusieurs patients avec une seule unité de sang et n’administrer à un patient que les constituants dont il a besoin." <strong>Source : OMS</strong></p>
+                    <p>"En fractionnant le sang en ses différents constituants, 
+                      on peut traiter plusieurs patients avec une seule unité de sang et
+                       n’administrer à un patient que les constituants dont il a besoin." <strong>Source : OMS</strong></p>
                   </div>
                 </div>
               </div>
@@ -172,7 +184,13 @@
 
       </div>
     </section><!-- End Departments Section -->
-
+    <section id="sponsors">
+        <div class="container">
+          <h3>
+            Nos partenaires
+          </h3>
+        </div>
+    </section>
      
   </main><!-- End #main -->
  
