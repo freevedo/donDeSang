@@ -2,9 +2,9 @@
 <header id="header" >
     <div class="container d-flex align-items-center">
 
-    <h1 class="logo mr-auto"><a href="{{ url('/') }}">Fasoblood</a></h1>
+    {{-- <h1 class="logo mr-auto"><a href="{{ url('/') }}">Fasoblood</a></h1> --}}
     <!-- Uncomment below if you prefer to use an image logo -->
-    <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+     <a href="{{ url('/') }}" class="logo mr-auto"><img src="{{ asset('img/logo.png') }}" alt="" class="img-fluid"></a>
 
 <!-- ta classe nav-menu doit avoir un souci et ca bloque les liens-->
       <nav class="nav-menu d-none d-lg-block">
