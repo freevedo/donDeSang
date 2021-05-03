@@ -6,16 +6,16 @@
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-<!-- ta classe nav-menu doit avoir un souci et ca bloque les liens-->
+
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="{{ Request::is('/') ? 'active' : ''}} "><a href="/">Accueil</a></li>
           <li class="{{ Request::is('/#about') ? 'active' : ''}} "><a href="{{ url('/#about') }}">A propos</a></li>
           <li class="{{ Request::is('#departments') ? 'active' : ''}} "><a href="{{ url('/#departments') }}">Conseils Sante</a></li>
-          <li class="{{ Request::is('alert') ? 'active' : ''}} "><a href="{{ url('/alert') }}"></i> alertes  <i class='bx bxs-bell-ring' ></i></a></li><strong class="push-number">1</strong>
+          <li class="{{ Request::is('alert') ? 'active' : ''}} "><a href="{{ url('/alert') }}"></i> alertes  <i class='bx bxs-bell-ring' ></i></a></li><strong class="push-number" id="unread"></strong>
             {{-- <i class="fas fa-sms"> --}}
           <li class="{{ Request::is('alert/create') ? 'active' : ''}} "><a href="{{ url('/alert/create') }}">Envoyer une alerte</a></li>
-          <li class="{{ Request::is('contact') ? 'active' : ''}} "><a href="">Contact</a></li>
+         
         @guest
           <li><a href="{{ route('register') }}">S'enregister</a></li>
 

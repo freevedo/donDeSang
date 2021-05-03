@@ -32,9 +32,12 @@
       @include('inc.topbar')
         @include('inc.navbar')
         @yield('content')
+
+        
         @include('inc.footer')
          <!-- Vendor JS Files -->
          <!-- Scripts Js-Bootstrap -->
+         <script   src="https://code.jquery.com/jquery-3.5.1.js"   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="   crossorigin="anonymous"></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{ asset('js/main.js') }}" defer></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

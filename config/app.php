@@ -123,6 +123,9 @@ return [
 
     'cipher' => 'AES-256-CBC',
 
+    'clientId' => env('ORANGE_CLIENT_ID'),
+    'clientSecret' => env('ORANGE_SECRET'),
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
@@ -171,7 +174,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,

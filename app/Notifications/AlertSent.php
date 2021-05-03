@@ -2,10 +2,12 @@
 
 namespace App\Notifications;
 
+use App\Channels\OrangeSms;
 use App\Mail\test;
 use Carbon\Carbon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\BroadcastMessage;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Mail;
@@ -76,5 +78,18 @@ class AlertSent extends Notification implements ShouldQueue
         return [
             //
         ];
+    }
+
+    public function toBroadcast($notifiable)
+    {
+        return new BroadcastMessage([
+            'date_alert'=>Carbon::now(),
+            'groupe_sanguin'=>$this->alert->groupe_sanguin,
+            'tel'=>$this->alert->tel
+        ]);
+
+    }
+    public function toOrange($notifiable){
+
     }
 }

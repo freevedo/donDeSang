@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\PagesController@index');
 Route::get('/about', 'App\Http\Controllers\PagesController@about');
 // Route::get('/create_alert', 'App\Http\Controllers\PagesController@create_alert');
-Route::middleware(['auth:sanctum', 'verified'])->get('/alert');
+//Route::middleware(['auth:sanctum', 'verified'])->get('/');
 
 
 
@@ -24,6 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/alert');
 Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('alert', 'App\Http\Controllers\AlertController');
+    Route::view('/test', 'dashboard');
     
 });
 

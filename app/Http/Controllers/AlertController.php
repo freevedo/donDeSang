@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\Sms;
 use App\Mail\test;
 use App\Models\Alert;
 use App\Models\User;
@@ -20,6 +21,7 @@ class AlertController extends Controller
     public function index()
     {
         $alerts= Alert::all();
+       // $this->sendSMS();
         return View('pages.list_alert')->with(['alerts'=>$alerts]);
     }
 
@@ -56,7 +58,7 @@ class AlertController extends Controller
 
         $users= User::all();
 
-
+       // $this->sendSMS($request['phone'], $request['message']);
         foreach($users as $user){
             if($user->compatible($alert)){
                 $user->notify(new AlertSent($user,$alert));
@@ -111,4 +113,43 @@ class AlertController extends Controller
     {
         //
     }
+
+    public function send(Request $request)
+    {
+        $this->validate($request, [
+            'phone' => 'required|numeric',
+            'message' => 'required|max:255',
+        ]);
+
+       // $this->sendSMS($request['phone'], $request['message']);
+
+        return redirect(route('message.create'));
+    }
+
+    public function sendSMS()
+    {
+        $config = array(
+            'clientId' => config('app.clientId'),
+            'clientSecret' =>  config('app.clientSecret'),
+        );
+
+        $osms = new Sms($config);
+
+        $data = $osms->getTokenFromConsumerKey();
+        $token = array(
+            'token' => $data
+        );
+
+
+        $response = $osms->sendSms(
+        // sender
+            'tel:+22665104264',
+            // receiver
+            'tel:+22672828135',
+            // message
+            'dada',
+            'Devscom'
+        );
+    }
 }
+
